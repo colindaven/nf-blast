@@ -74,6 +74,18 @@ conda activate nextflow
 bash run_complete_nf_blast.sh
 ```
 
+## Results
+
+If all goes well, results from the annot.csv file might look like this:
+
+less ERR2752917_R1.subsample.filt.per.annot.csv
+```
+42.1569     43 LT629801.1 LT629801.1 Pseudomonas rhodesiae strain BS2777 genome assembly, chromosome: I
+2.94118      3 AC245657.1 AC245657.1 Homo sapiens FOSMID clone ABC24-755K16 from chromosome 4, complete sequence
+1.96078      2 LM423415.1 LM423415.1 Enterobius vermicularis genome assembly E_vermicularis_Canary_Islands ,scaffold EVEC_scaffold0009157
+1.96078      2 CP014014.1 CP014014.1 Stenotrophomonas maltophilia strain FDAARGOS_92 chromosome, complete genome
+1.96078      2 CP003589.1 CP003589.1 Pseudomonas putida ND6 plasmid pND6-2, complete sequence
+```
 
 
 ## FAQ
