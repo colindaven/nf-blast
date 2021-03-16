@@ -53,6 +53,7 @@ params.java_bin_path = "/mnt/ngsnfs/tools/jdk-10.0.1/bin/"
 
 ### Setup the nextflow.conf with your execution environment
 
+For other executors (such as the non-SLURM local) see https://www.nextflow.io/docs/latest/executor.html#local
 ```
 nano nextflow.conf
 
