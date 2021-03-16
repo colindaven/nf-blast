@@ -33,13 +33,15 @@ git clone https://github.com/colindaven/nf-blast
 conda env create -f env.nextflow.yml
 conda activate nextflow
 
-# Edit variables blastdb and repopath to the paths in your environment
+Edit variables blastdb and repopath to the paths in your environment
 nano run_complete_nf_blast.sh
 
 
+```
 
+### Edit javapath and repopath in main.nf
 
-# Edit javapath and repopath in main.nf
+```
 nano main.nf
 
 /*
@@ -47,11 +49,11 @@ nano main.nf
  */
 params.repopath = "/mnt/ngsnfs/tools/dev/nf-blast"
 params.java_bin_path = "/mnt/ngsnfs/tools/jdk-10.0.1/bin/"
+```
 
+### Setup the nextflow.conf with your execution environment
 
-
-# Setup the nextflow.conf with your execution environment
-
+```
 eg if your SLURM cluster queue is called batchq, and you want to reserve 4 cores for each blast job. Job names are nf_blast
   clusterOptions = '-p batchq  -c 4 -J nf_blast -s'
 
