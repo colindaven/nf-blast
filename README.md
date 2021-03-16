@@ -47,7 +47,7 @@ nano main.nf
 /*
  * @ Users: change these following paths or specify them as parameters
  */
-params.repopath = "/mnt/ngsnfs/tools/dev/nf-blast"
+repopath = "/mnt/ngsnfs/tools/dev/nf-blast"
 params.java_bin_path = "/mnt/ngsnfs/tools/jdk-10.0.1/bin/"
 ```
 
