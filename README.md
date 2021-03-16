@@ -4,6 +4,7 @@ Work in progress - nextflow blast.
 ## Why you shouldn't use nf-blast
  - Only tested on our architecture
  - Annotation of id to sequence names only works with one nt database version to date
+ - blast is a very slow algorithm by modern standards
 
 
 ## Why you should use nf-blast
@@ -68,7 +69,7 @@ bash run_complete_nf_blast.sh
 
 ## FAQ
 
-Which blast parameters are used ?
+Which blast parameters are used ? See below, 80 per cent identity is important.
 
 See main.nf
 
