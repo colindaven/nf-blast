@@ -37,8 +37,8 @@ params.chunkSize = 1
 /*
  * @ Users: change these following paths or specify them as parameters
  */
-params.repopath = "/mnt/ngsnfs/tools/dev/nf-blast"
-params.java_bin_path = "/mnt/ngsnfs/tools/jdk-10.0.1/bin/"
+repopath = "/mnt/ngsnfs/tools/dev/nf-blast"
+java_bin_path = "/mnt/ngsnfs/tools/jdk-10.0.1/bin/"
 
 db_name = file(params.db).name
 db_path = file(params.db).parent

@@ -52,8 +52,7 @@ echo "info: run nf blast"
 for file in ./*.{fa,fasta}
 do
 	echo "info: start $file"
-	#srun --partition=lowprio --mem=15000 --cpus-per-task 1  nextflow "$repopath"/main.nf -c "$repopath"/nextflow.conf --query "$file" --db "$blastdb" --chunkSize "$chunksize" -ansi-log false -with-report "${file%.fa}".report.html -with-timeline "${file%.fa}".timeline.html -with-trace > "${file%.fa}".csv &
-	srun --partition=lowprio --mem=15000 --cpus-per-task 1  nextflow "$repopath"/main.nf -c "$repopath"/nextflow.conf --query "$file" --db "$blastdb" --repopath "$repopath" --chunkSize "$chunksize" -ansi-log false -with-report "${file%.fa}".report.html -with-timeline "${file%.fa}".timeline.html -with-trace > "${file%.fa}".csv &
+	srun --partition=lowprio --mem=15000 --cpus-per-task 1  nextflow "$repopath"/main.nf -c "$repopath"/nextflow.conf --query "$file" --db "$blastdb" --chunkSize "$chunksize" -ansi-log false -with-report "${file%.fa}".report.html -with-timeline "${file%.fa}".timeline.html -with-trace > "${file%.fa}".csv &
 	wait
 	echo "info: completed $file"
 	echo "info: print tail trace.txt"
