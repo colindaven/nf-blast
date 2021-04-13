@@ -1,6 +1,11 @@
 # nf-blast
 Work in progress - nextflow blast.
 
+Authors (2018-2021)
+ - Colin Davenport
+ - Fabian Friedrich
+
+
 ## Why you shouldn't use nf-blast
  - Only tested on our architecture
  - Annotation of id to sequence names only works with one nt database version to date
@@ -14,7 +19,7 @@ Work in progress - nextflow blast.
  - You want to find possible contamination sources in your fastq or fasta data
  - You don't want quantitative results
  - You have a big, idle cluster
- - You realize this is not a metagenome quantification program. For that, use Wochenende or Kraken-uniq.
+ - You realize this is not a metagenome quantification program. For that, use Wochenende or Kraken-uniq etc
 
 
 
