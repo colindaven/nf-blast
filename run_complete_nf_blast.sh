@@ -13,7 +13,7 @@ shopt -s nullglob
 # Parameters
 chunksize=100
 subsamplesize=2000
-blastdb=/lager2/rcug/seqres/nt_db/nt_2018/nt
+blastdb=/mnt/ngsnfs/seqres/nt_db/nt_2018/nt
 repopath=/mnt/ngsnfs/tools/dev/nf-blast
 
 

@@ -19,8 +19,8 @@ splitLine = []
 
 # Read all nt headers into dictionary
 headersDict={}
-#with open ("/lager2/rcug/seqres/nt_db/nt_headers_500k.txt", "r") as blastHeaderFile:
-with open ("/lager2/rcug/seqres/nt_db/nt_2018/nt_headers.txt", "r") as blastHeaderFile:
+#with open ("/mnt/ngsnfs/seqres/nt_db/nt_headers_500k.txt", "r") as blastHeaderFile:
+with open ("/mnt/ngsnfs/seqres/nt_db/nt_2018/nt_headers.txt", "r") as blastHeaderFile:
 	for line in blastHeaderFile.readlines():
 		# Remove first character >
 		line = line[1:]
